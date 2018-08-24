@@ -3,11 +3,30 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400, 900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
   <title>Fastly Festival</title>
   <link rel="stylesheet" href="css/foundation-emails.css" />
 
   <style>
+
+    @media only screen and (max-device-width: 596px){
+      th.small-12.first,
+      th.small-12.last{
+          padding-left: 80px !important;
+      }
+
+      #body {
+        background-image: url(assets/sidebar-mobile.png) !important;
+        background-repeat: no-repeat;
+        background-size: contain !important;
+        width: 25px;
+      }
+
+      #footer-img {
+        padding-left: 0px !important;
+      }
+    }
+
     th.large-12.first {
       padding-left: 160px;
       padding-right: 25px;
@@ -22,14 +41,14 @@
     }
 
     h4 {
-      font-weight: 900;
+      font-weight: 700;
       font-size: 20px;
       margin-bottom: 0;
     }
 
     h5{
       font-size: 13px;
-      font-weight: 900;
+      font-weight: 700;
       margin-bottom: 0;
     }
 
@@ -54,6 +73,7 @@
       position: relative;
       background-size: contain;
     }
+
   </style>
 </head>
 
@@ -126,7 +146,7 @@
                     <table class="row">
                       <tbody>
                         <tr>
-                          <th class="small-6 large-6 columns first">
+                          <th class="small-12 large-6 columns first">
                             <table>
                               <tr>
                                 <th>
@@ -138,7 +158,7 @@
                               </tr>
                             </table>
                           </th>
-                          <th class="small-6 large-6 columns last">
+                          <th class="small-12 large-6 columns last">
                             <table>
                               <tr>
                                 <th>
