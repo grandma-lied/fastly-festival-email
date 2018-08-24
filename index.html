@@ -9,10 +9,21 @@
 
   <style>
 
-    @media only screen and (max-device-width: 596px){
+    @media only screen and (max-device-width: 596px) { 
       th.small-12.first,
-      th.small-12.last{
+      th.small-12.last,
+      th.small-6.first
+      {
           padding-left: 80px !important;
+      }
+
+      .fastly-logo {
+        transform: scale(0.9);
+      }
+
+      th.small-6.last {
+        width: 50% !important;
+        padding-right: 0px;
       }
 
       #body {
@@ -25,7 +36,32 @@
       #footer-img {
         padding-left: 0px !important;
       }
-    }
+
+      #instrument-logo {
+        padding-top: 0px !important;
+        transform: translate(0%, 0%) rotate(15deg) scale(1) !important;
+        max-width: 100%;
+      }
+
+      .centered {
+        position: absolute;
+        top: 43%;
+        left: 50%;
+        transform: translate(-65%, -15%)!important;
+        font-size: 3vw !important;
+        width: 100%;
+      }
+
+      .city-x {
+        padding-right: 10px;
+        transform: translate(-20%, 20%) scaleX(0.5) scaleY(0.5) !important;
+        height: 10%;
+      }
+
+      .row th.logo-pad {
+        padding-left: 0px !important;
+      }
+    } /* END OF MEDIA QUERIES */
 
     th.large-12.first {
       padding-left: 160px;
@@ -139,17 +175,17 @@
                     <table class="row">
                       <tbody>
                         <tr>
-                          <th class="small-6 large-6 columns first">
+                          <th class="small-6 large-6 columns first first-row">
                             <table>
                               <tr>
                                 <th>
-                                  <center data-parsed=""> <img src="assets/fastly-logo.png" align="center" class="float-center"> </center>
+                                  <center data-parsed=""> <img src="assets/fastly-logo.png" align="center" class="float-center fastly-logo"> </center>
                                 </th>
                                 <th class="expander"></th>
                               </tr>
                             </table>
                           </th>
-                          <th class="small-6 large-6 columns last logo-pad container">
+                          <th class="small-6 large-6 first-row columns last logo-pad container">
                             <table>
                               <tr>
                                 <th>
